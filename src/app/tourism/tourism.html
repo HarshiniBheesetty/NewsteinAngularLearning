@@ -1,0 +1,18 @@
+<div style="text-align: center">
+    <h1>{{place.name}}</h1>
+
+
+    <div>
+        <img src={{place.mainImg}} alt="some pic">
+
+        <p>
+            {{place.description}}
+        </p>
+
+    </div>
+
+    <div>
+            <!-- <p *ngFor="let eachStrength of classStrengthList">{{eachStrength}}</p> -->
+       <img  *ngFor="let eachImg of place.imgList"  src= {{eachImg}}  height="300px" >
+    </div>
+</div>

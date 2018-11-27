@@ -1,0 +1,17 @@
+<button (click)="updateCheck()"> click Here</button>
+<div *ngIf="check">
+    <H1>External HTML {{name}} {{newTitle}}</H1>
+    <p>Add url path in Bike component under 'templateURL' name</p>
+
+    <p *ngFor="let eachStrength of classStrengthList">{{eachStrength}}</p>
+    
+</div>
+
+<div *ngIf="!check">
+
+    {{newTitle}}
+    <p>I am tired...Don't request me anything!</p>
+    <p>name: {{name}} </p>
+    <div>name: <input type="text" [value]="name"></div>
+    <div>name: <input type="text" [(ngModel)]="name"></div>
+</div>
