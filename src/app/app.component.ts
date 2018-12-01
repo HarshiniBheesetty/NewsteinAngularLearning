@@ -22,7 +22,7 @@ export class AppComponent {
 
   // Methods:
   public constructor() {
-    this.title = "My game";
+    this.title = "AppComponent aka root-component";
     this.helper = new Helper();
 
     this.x = Helper.sum(10, 60);

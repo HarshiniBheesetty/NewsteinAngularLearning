@@ -3,11 +3,11 @@
     <H1>External HTML {{name}} {{newTitle}}</H1>
     <p>Add url path in Bike component under 'templateURL' name</p>
 
-    <p *ngFor="let eachStrength of classStrengthList">{{eachStrength}}</p>
+    <p *ngFor="let eachStrength of classStrengthList" (click)="someHandler(eachStrength)">{{eachStrength}}</p>
     
 </div>
 
-<div *ngIf="!check">
+<div *ngIf="2 % 1 == 0">
 
     {{newTitle}}
     <p>I am tired...Don't request me anything!</p>
