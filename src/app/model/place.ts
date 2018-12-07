@@ -11,8 +11,9 @@ export class Place {
 
         this.name = "Bengaluru"
         this.desctiptionMethod();
-        this.mainImg = "https://www.holidify.com/images/compressed/3562.jpg"
+        this.mainImg = "https://cdn.karnataka.com/wp-content/uploads/2009/05/Nandi-Hills.jpg"
         this.imgListMethod();
+        
 
     }
 
@@ -21,7 +22,7 @@ export class Place {
         this.imgList = [];
 
         for (let i = 0; i < 3; i++) {
-            this.imgList[i] = "https://www.holidify.com/images/compressed/3562.jpg"
+            this.imgList[i] = "https://cdn.karnataka.com/wp-content/uploads/2009/05/Nandi-Hills.jpg"
         }
     }
 

@@ -5,11 +5,15 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { devModeEqual } from '@angular/core/src/change_detection/change_detection';
-import { Bike } from './components/demo.component';
+import { Bike } from './components/demo/demo.component';
 import { Foo1Component } from './components/foo1/foo1.component';
 import { Foo2Component } from './components/foo2/foo2.component';
-import { AppTourism } from './tourism/tourism';
-import { TestComponent } from './test/test.component';
+import { AppTourism } from './components/tourism/tourism';
+import { TestComponent } from './components/test/test.component';
+import { Logger } from './utlility/logger';
+import { HttpClientModule } from '@angular/common/http';
+import { DemoService } from './services/demo.service';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -18,14 +22,17 @@ import { TestComponent } from './test/test.component';
     Foo1Component,
     Foo2Component,
     AppTourism,
-    TestComponent
+    TestComponent,
+    LoginComponent,
+    
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [Logger,DemoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
